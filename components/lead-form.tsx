@@ -19,14 +19,15 @@ export function LeadForm() {
           <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
               <Compass className="h-3.5 w-3.5" aria-hidden="true" />
-              Получите программу
+              Запись на поток
             </span>
             <h2 className="mt-4 text-balance font-display text-3xl font-extrabold tracking-tight text-foreground md:text-4xl">
-              Напишите «КОМПАС» — и получите подробную программу курса
+              Запишитесь на курс «Цифровой компас»
             </h2>
             <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Оставьте контакты, и специалист Академии «Каспий» бесплатно
-              проконсультирует вас по программе, стоимости и датам старта.
+              Оставьте контакты, и специалист Академии «Каспий» свяжется с вами:
+              расскажет о стоимости, условиях и закрепит за вами место в потоке от
+              1 сентября 2026.
             </p>
           </div>
 
@@ -88,7 +89,7 @@ export function LeadForm() {
               </div>
               <Button type="submit" size="lg" className="mt-1 w-full gap-2">
                 <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                Написать «КОМПАС»
+                Записаться на обучение
               </Button>
               <p className="text-xs leading-relaxed text-muted-foreground">
                 Нажимая кнопку, вы соглашаетесь на обработку персональных данных.

@@ -1,11 +1,11 @@
 import Image from "next/image"
-import { Check, Clock, GraduationCap, MessageCircle } from "lucide-react"
+import { CalendarClock, Check, FileBadge, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const heroBullets = [
-  "Планирование маршрутов с ИИ",
-  "Чат-боты и CRM для записи туристов",
-  "Аудиогиды на нескольких языках",
+  "Собираете маршруты и тексты экскурсий с ИИ за минуты",
+  "Запускаете чат-бота, аудиогид и автоматизацию записи",
+  "Получаете документ по профстандарту «Экскурсовод (гид)»",
 ]
 
 export function Hero() {
@@ -15,18 +15,18 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 md:px-6 md:py-20 lg:grid-cols-2">
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
-            <GraduationCap className="h-3.5 w-3.5" aria-hidden="true" />
-            Новый онлайн-курс для гидов
+            <CalendarClock className="h-3.5 w-3.5" aria-hidden="true" />
+            Старт потока — 1 сентября 2026
           </span>
 
           <h1 className="mt-5 text-balance font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground md:text-5xl lg:text-6xl">
-            Цифровой компас: искусство впечатлений
+            Станьте гидом, которого выбирают: ИИ и цифровые инструменты в вашей работе
           </h1>
 
           <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            Освойте ИИ, цифровые инструменты и автоматизацию, чтобы избавиться от
-            рутины и создавать безопасный, современный и запоминающийся
-            туристический опыт.
+            Курс «Цифровой компас: искусство впечатлений» за один поток учит
+            автоматизировать рутину, создавать контент нейросетями и повышать
+            безопасность и сервис — чтобы туристы возвращались и рекомендовали вас.
           </p>
 
           <ul className="mt-6 grid gap-2.5">
@@ -44,21 +44,21 @@ export function Hero() {
             <Button asChild size="lg" className="gap-2">
               <a href="#lead">
                 <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                Написать «КОМПАС»
+                Записаться на обучение
               </a>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <a href="#curriculum">Смотреть программу</a>
+              <a href="#program">Смотреть программу</a>
             </Button>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
             <span className="flex items-center gap-2">
-              <Clock className="h-4 w-4 text-primary" aria-hidden="true" />
-              Онлайн, в удобном темпе
+              <CalendarClock className="h-4 w-4 text-primary" aria-hidden="true" />
+              Очно-заочно, онлайн
             </span>
             <span className="flex items-center gap-2">
-              <GraduationCap className="h-4 w-4 text-primary" aria-hidden="true" />
+              <FileBadge className="h-4 w-4 text-primary" aria-hidden="true" />
               Документ установленного образца
             </span>
           </div>
@@ -76,8 +76,8 @@ export function Hero() {
             />
           </div>
           <div className="absolute -bottom-5 -left-4 hidden rounded-xl border border-border bg-card p-4 shadow-lg sm:block">
-            <p className="font-display text-2xl font-extrabold text-primary">7+</p>
-            <p className="text-xs text-muted-foreground">цифровых навыков в программе</p>
+            <p className="font-display text-2xl font-extrabold text-primary">2</p>
+            <p className="text-xs text-muted-foreground">профстандарта в основе программы</p>
           </div>
         </div>
       </div>

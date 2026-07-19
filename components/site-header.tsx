@@ -4,10 +4,10 @@ import { Compass, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
-  { label: "О курсе", href: "#about" },
-  { label: "Программа", href: "#curriculum" },
-  { label: "Чему научитесь", href: "#learn" },
-  { label: "Условия", href: "#conditions" },
+  { label: "Результат", href: "#result" },
+  { label: "Программа", href: "#program" },
+  { label: "Доказательства", href: "#proof" },
+  { label: "Оффер", href: "#offer" },
   { label: "Вопросы", href: "#faq" },
 ]
 
@@ -48,7 +48,7 @@ export function SiteHeader() {
             +7 (8722) 70-11-77
           </a>
           <Button asChild size="sm">
-            <a href="#lead">Получить программу</a>
+            <a href="#lead">Записаться</a>
           </Button>
         </div>
       </div>
