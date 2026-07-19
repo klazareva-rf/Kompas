@@ -67,11 +67,8 @@ export function Curriculum() {
     <section id="curriculum" className="bg-secondary/60">
       <div className="mx-auto max-w-4xl px-4 py-16 md:px-6 md:py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-wide text-primary">
+          <h2 className="text-balance font-display text-3xl font-extrabold tracking-tight text-foreground md:text-4xl">
             Программа курса
-          </span>
-          <h2 className="mt-3 text-balance font-display text-3xl font-extrabold tracking-tight text-foreground md:text-4xl">
-            Что вас ждёт внутри
           </h2>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
             Пошаговая программа: от знакомства с ИИ до полной автоматизации работы

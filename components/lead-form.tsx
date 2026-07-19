@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { CheckCircle2, Compass, MessageCircle } from "lucide-react"
+import { CheckCircle2, Compass } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function LeadForm() {
@@ -87,8 +87,7 @@ export function LeadForm() {
                   className="h-11 rounded-lg border border-input bg-background px-3.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/20"
                 />
               </div>
-              <Button type="submit" size="lg" className="mt-1 w-full gap-2">
-                <MessageCircle className="h-4 w-4" aria-hidden="true" />
+              <Button type="submit" size="lg" className="mt-1 w-full">
                 Записаться на обучение
               </Button>
               <p className="text-xs leading-relaxed text-muted-foreground">

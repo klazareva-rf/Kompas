@@ -1,4 +1,4 @@
-import { Award, BookCheck, ScrollText } from "lucide-react"
+import { BookCheck } from "lucide-react"
 
 const stats = [
   { value: "2", label: "профстандарта в основе программы" },
@@ -16,19 +16,6 @@ const tools = [
   "Чат-боты",
   "CRM",
   "Навигация",
-]
-
-const standards = [
-  {
-    icon: ScrollText,
-    title: "Экскурсовод (гид) 04.005",
-    text: "Приказ Минтруда России от 24.12.2021 № 913н. Уровень квалификации 4 (А/01.4, А/02.4).",
-  },
-  {
-    icon: ScrollText,
-    title: "Специалист по данным цифрового следа 06.046",
-    text: "Приказ Минтруда России от 09.07.2021 № 462н. Уровень квалификации 4 (А/01.4, А/02.4).",
-  },
 ]
 
 export function Proof() {
@@ -53,23 +40,6 @@ export function Proof() {
             <div key={s.label} className="rounded-xl border border-border bg-card p-6 text-center">
               <p className="font-display text-4xl font-extrabold text-primary">{s.value}</p>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.label}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-6 grid gap-4 lg:grid-cols-2">
-          {standards.map((item) => (
-            <div key={item.title} className="flex items-start gap-4 rounded-xl border border-border bg-card p-6">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                <item.icon className="h-5 w-5" aria-hidden="true" />
-              </span>
-              <div>
-                <div className="flex items-center gap-2">
-                  <Award className="h-4 w-4 text-primary" aria-hidden="true" />
-                  <h3 className="font-display text-base font-bold text-foreground">{item.title}</h3>
-                </div>
-                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
-              </div>
             </div>
           ))}
         </div>
