@@ -3,6 +3,11 @@ import { Button } from "@/components/ui/button"
 
 const points = [
   {
+    icon: CalendarClock,
+    title: "Старт 1 сентября 2026",
+    text: "Набор на поток идёт заранее — успейте занять место до старта.",
+  },
+  {
     icon: Users,
     title: "Мест ограничено",
     text: "Формат с практикой и сопровождением — группа набирается небольшой.",
@@ -32,7 +37,7 @@ export function Urgency() {
           </p>
         </div>
 
-        <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+        <ul className="mt-10 grid gap-4 md:grid-cols-3">
           {points.map((item) => (
             <li key={item.title} className="rounded-xl border border-border bg-card p-6">
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { CalendarClock, Check, FileBadge } from "lucide-react"
+import { CalendarClock, Check, FileBadge, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const heroBullets = [
@@ -20,13 +20,13 @@ export function Hero() {
           </span>
 
           <h1 className="mt-5 text-balance font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground md:text-5xl lg:text-6xl">
-            Станьте гидом и проводником, которых выбирают
+            Станьте гидом, которого выбирают: ИИ и цифровые инструменты в вашей работе
           </h1>
 
           <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            Курс «Цифровой компас: искусство впечатлений» научит автоматизировать
-            рутину, создавать контент нейросетями и повышать безопасность и сервис —
-            чтобы туристы возвращались и рекомендовали вас.
+            Курс «Цифровой компас: искусство впечатлений» за один поток учит
+            автоматизировать рутину, создавать контент нейросетями и повышать
+            безопасность и сервис — чтобы туристы возвращались и рекомендовали вас.
           </p>
 
           <ul className="mt-6 grid gap-2.5">
@@ -41,8 +41,14 @@ export function Hero() {
           </ul>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg">
-              <a href="#lead">Записаться на обучение</a>
+            <Button asChild size="lg" className="gap-2">
+              <a href="#lead">
+                <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                Записаться на обучение
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <a href="#program">Смотреть программу</a>
             </Button>
           </div>
 
@@ -68,6 +74,10 @@ export function Hero() {
               priority
               className="h-full w-full object-cover"
             />
+          </div>
+          <div className="absolute -bottom-5 -left-4 hidden rounded-xl border border-border bg-card p-4 shadow-lg sm:block">
+            <p className="font-display text-2xl font-extrabold text-primary">2</p>
+            <p className="text-xs text-muted-foreground">профстандарта в основе программы</p>
           </div>
         </div>
       </div>
